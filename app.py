@@ -1,5 +1,4 @@
 
-=======
 import streamlit as st
 import requests
 import pandas as pd
@@ -44,9 +43,86 @@ st.markdown(
         border-radius: 15px;
         font-family: 'Comic Sans MS', cursive, sans-serif;
     }
+
+    <style>
+/* Body background */
+body {
+    background-color: #fff0f6;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #d6336c;
+    margin: 20px 40px;
+}
+
+/* Main container box styling */
+.css-1d391kg {
+    background-color: #ffe3ec !important;
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 20px rgba(214, 51, 108, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animate hover effect */
+.css-1d391kg:hover {
+    box-shadow: 0 12px 25px rgba(214, 51, 108, 0.4);
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #ffd1dc !important;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #b4004e;
+    box-shadow: 2px 0 10px rgba(255, 150, 180, 0.2);
+}
+
+/* Metrics text */
+.stMetric-value {
+    font-size: 3rem !important;
+    color: #c61a57 !important;
+    font-weight: bold;
+    text-shadow: 1px 1px #ffdce5;
+}
+
+/* Section headers */
+h1, .title {
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff80ab, #ffb3c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+}
+
+/* Customize slider label */
+.css-1cpxqw2 {
+    color: #b4004e !important;
+}
+
+/* Button styling (if used) */
+button {
+    background-color: #ffb3c6 !important;
+    color: #fff !important;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #ff69a6 !important;
+}
+
+/* Remove Streamlit footer */
+footer {
+    visibility: hidden;
+}
+</style>
+
     </style>
     """,
     unsafe_allow_html=True
+
 )
 
 # Sidebar widgets for coin and days
@@ -119,8 +195,8 @@ with st.spinner("Fetching data..."):
 st.markdown(
     """
     ---
-    Made with 💖 and Python by Hasya | Stay fabulous & code on! 💅
+    Made with 💖 and Python by Hasya 
     """,
     unsafe_allow_html=True,
 )
->>>>>>> d162dc677be580d5cd281dfb50496dbbbc3e5e3f
+
